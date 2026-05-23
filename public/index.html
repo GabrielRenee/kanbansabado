@@ -8,21 +8,23 @@
     @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
 
     :root {
-      /* Color Palette from Requirements */
-      --bg-primary: #0a0a0f;
-      --bg-secondary: #111118;
-      --bg-card: #16161f;
-      --bg-hover: #1e1e2a;
-      --border: #2a2a3a;
-      --accent: #6c63ff;
-      --accent-dim: rgba(108, 99, 255, 0.15);
-      --text-primary: #e8e8f0;
-      --text-secondary: #8888aa;
-      --text-muted: #55556a;
-      --danger: #ff4444;
-      --danger-dim: rgba(255, 68, 68, 0.12);
-      --success: #22c55e;
-      --warning: #f59e0b;
+      /* Ukiyo-e Art Color Palette (Traditional Japanese Woodblock Style) */
+      --bg-primary: #f2ebd9;       /* Washi (Papel tradicional envelhecido) */
+      --bg-secondary: #e6dcad;     /* Papel de seda queimado pelo tempo */
+      --bg-card: #fcfaf2;          /* Seda crua texturizada */
+      --bg-hover: #dfd295;         /* Destaque suave em bege-dourado */
+      --border: #cca87c;           /* Fibra de bambu seca */
+      --accent: #1c2d37;           /* Azul da Prússia (A Grande Onda) */
+      --accent-dim: rgba(28, 45, 55, 0.12);
+      --text-primary: #2b2622;     /* Preto Sumi (fuligem de pinho) */
+      --text-secondary: #665544;   /* Nanquim aguado ou marrom chá */
+      --text-muted: #9e8e7c;       /* Cinza ocre esmaecido */
+      --danger: #b23a22;           /* Vermelho de ferro / Vermilion */
+      --danger-dim: rgba(178, 58, 34, 0.12);
+      --success: #5e7a68;          /* Verde sálvia/chá matcha */
+      --success-dim: rgba(94, 122, 104, 0.12);
+      --warning: #cf9f52;          /* Ouro ocre queimado */
+      --warning-dim: rgba(207, 159, 82, 0.12);
       
       --font-mono: 'JetBrains Mono', monospace;
     }
@@ -417,9 +419,9 @@
       letter-spacing: 0.5px;
     }
 
-    .priority-low { background: rgba(59, 130, 246, 0.15); color: #60a5fa; border: 1px solid rgba(59, 130, 246, 0.3); }
-    .priority-medium { background: rgba(245, 158, 11, 0.15); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.3); }
-    .priority-high { background: rgba(239, 68, 68, 0.15); color: #f87171; border: 1px solid rgba(239, 68, 68, 0.3); }
+    .priority-low { background: rgba(94, 122, 104, 0.12); color: #4a6652; border: 1px solid rgba(94, 122, 104, 0.25); }
+    .priority-medium { background: rgba(207, 159, 82, 0.12); color: #a6742b; border: 1px solid rgba(207, 159, 82, 0.25); }
+    .priority-high { background: rgba(178, 58, 34, 0.12); color: #a0281b; border: 1px solid rgba(178, 58, 34, 0.25); }
 
     .badge-overdue {
       background: var(--danger);
@@ -593,14 +595,14 @@
           </div>
         </div>
         <div class="dash-card">
-          <div class="dash-icon" style="color: var(--warning); background: rgba(245, 158, 11, 0.15)">⚡</div>
+          <div class="dash-icon" style="color: var(--warning); background: var(--warning-dim)">⚡</div>
           <div class="dash-info">
             <h3 id="count-doing">0</h3>
             <p>Em Andamento</p>
           </div>
         </div>
         <div class="dash-card">
-          <div class="dash-icon" style="color: var(--success); background: rgba(34, 197, 94, 0.15)">✓</div>
+          <div class="dash-icon" style="color: var(--success); background: var(--success-dim)">✓</div>
           <div class="dash-info">
             <h3 id="count-done">0</h3>
             <p>Concluídas</p>
